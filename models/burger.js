@@ -9,11 +9,13 @@ var burger = {
   },
   // The variables cols and vals are arrays.
   insertOne: function(cols, vals, cb) {
+    console.log("Buger model trying to insert");
     orm.insertOne("burgers", cols, vals, function(res) {
       cb(res);
     });
   },
   updateOne: function(objColVals, condition, cb) {
+    console.log("Model here - running updateOne");
     orm.updateOne("burgers", objColVals, condition, function(res) {
       cb(res);
     });

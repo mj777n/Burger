@@ -12,7 +12,7 @@ function printQuestionMarks(num) {
 }
 
 // Helper function to convert object key/value pairs to a readable SQL syntax query
-function objToSql(obj) {
+function objToSql(ob) {
   var arr = [];
   // loop through the keys and push the key/value as a string int arr
   for (var key in ob) {
@@ -48,6 +48,7 @@ var orm = {
     // function insertOne acts as our "Create" for "CRUD"
     // ** using helper function "objToSql" **
   insertOne: function(table, cols, vals, cb) {
+    console.log("orm.js insertOne - line 51");
     var queryString = "INSERT INTO " + table;
     queryString += " (";
     queryString += cols.toString();

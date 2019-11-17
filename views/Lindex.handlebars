@@ -1,0 +1,55 @@
+<div class="container">
+<div class="row">
+  <div class="col-md-12">
+    <br>
+    <h1>EAT DA BURGER MAN!!</h1>
+    <img src="http://www.burgerweb.com/wp-content/uploads/2015/12/bestburgerinamerica.jpg" class="rounded mx-auto d-block" alt="Cheeseburger "height="250" width="450">
+  <br><hr>
+  </div>
+</div> 
+
+  <div class="center">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card-body">
+        <h5 class="card-title">Burgers ready to eat</h5>
+        <ul>
+          {{#each burgers}}
+            {{#unless devoured}}
+            <span>{{this.id}} {{this.burger_name}}</span>
+             {{!-- {{> burgers/burger-block devoured=false}} --}}
+            {{/unless}}
+          {{#each}}
+        </ul>
+      </div>    
+    </div>
+       
+    <div align="center" class="col-md-4">
+      <div class="card-body">
+        <h5 class="card-title">Enter your burger here</h5>
+        <form class="create-form">
+          <div class="form-group">
+            <label for="newBurger">Order your burger here</label>
+            <input type="text" id="newBurger" name="burger">
+          </div> 
+            <button type="submit" class="btn btn-success" id="addBurger">Add a burger
+              {{!-- <span class="fa fa-thumbs-up"></span> --}}
+            </button>        
+        </form>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 text-center">
+      <div class="card-body">
+        <h5 class="card-title">Burgers already devoured.</h5>
+        <li>
+          {{#each burgers}}
+          {{#if devoured}}
+           {{!-- {{burger_name}} --}}
+           {{> burgers/burger-block devoured=true}}
+          {{/if}}
+        {{/each}}
+        </li>
+      </div>
+    </div>
+</div>
