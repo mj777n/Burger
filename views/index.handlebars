@@ -5,10 +5,11 @@
     <br><hr>
   </div>
 
+  {{!-- LEFT SIDE PANEL for displaying burgers ready to devour--}}
   <div class="row">
     <div class="col-6 col-md-4 text-center">
-      <div class="card-body panel">
-        <h5 class="card-title" id="leftside"><strong>Burgers ready to eat</strong></h5><hr>
+      <div class="card-body">
+        <h4 class="card-title" id="leftside"><strong>Burgers ready to eat</strong></h4><hr>
         <ul>
           {{#each burgers}}
             {{#unless devoured}}    
@@ -20,7 +21,8 @@
         </ul>  
       </div>    
     </div>
-       
+
+    {{!-- CENTER PANEL for ordering burger --}}      
     <div class="col-6 col-md-4 text-center">
       <div class="card-body">
         <h3 class="card-title"><strong>Order burger here</strong> </h3>
@@ -33,9 +35,11 @@
       </div>
     </div>
 
+    {{!-- RIGHT SIDE PANEL for displaying burgers that have been devoured --}}
+    {{!-- USING Partial DIR with burger-block class="handlebars to get DELETE buttons--}}
     <div class="col-6 col-md-4 text-center">
       <div class="card-body panel">
-        <h5 class="card-title" id="rightside"><strong>Burgers already devoured.</strong></h5>
+        <h4 class="card-title" id="rightside"><strong>Burgers already devoured</strong></h4>
         {{#each burgers}}
           {{#if devoured}}
             {{> burgers/burger-block devoured=1}}
