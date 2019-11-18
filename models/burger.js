@@ -21,6 +21,7 @@ var burger = {
     });
   },
   deleteOne: function(condition, cb) {
+    console.log("Inside model");
     orm.deleteOne("burgers", condition, function(res) {
       cb(res);
     });
