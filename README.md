@@ -50,13 +50,14 @@ Order your favorite burger and the APP will serve it up for you to devour.
  * NPM installed packages:
    * JSON for text handling
    * Body-Parsing for data handling
-* Deployed to Heroku under 
-* Deployed to my personal gitHub
+* Deployed to Heroku under https://infinite-island-44576.herokuapp.com/
+* Deployed to my personal gitHub https://mj777n.github.io/Burger/
+* Added to Portfolio page https://mj777n.github.io/Responsive-Portfolio/
 
 ## Functionality
 
 ## ************************************************************* ##
-## Demo of Ap (using TinyTake) ##
-[DEMO MY CELEBRITY-FRIEND-FINDER HERE]()
+## Watch a Demo of Ap (using TinyTake) // sorry it's a bit long - winded (hahaha) ##
+[DEMO MY CELEBRITY-FRIEND-FINDER HERE](https://ttprivatenew.s3.amazonaws.com/pulse/mjnorato-aol/attachments/11933797/The+Burger+App.mp4)
 
 
